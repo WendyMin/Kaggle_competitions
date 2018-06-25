@@ -1,0 +1,36 @@
+[Version 1.0]
+Accuracy: 0.97271
+1. training set: validation set = 9 : 1
+2. CNN: In -> [Conv2D -> relu] -> Flatten -> [Dense -> softmax] -> Out
+3. Optimizer&Annealer: RMSprop, ReduceLROnPlateau
+4. Data augmentation: ImageDataGenerator
+5. batch_size = 86
+6. epochs = 2
+
+
+[Version 2.0]
+Accuracy: 0.98442
+1. training set: validation set = 9 : 1
+2! CNN: In -> [[Conv2D -> relu]*2 -> MaxPool2D -> Dropout]*2 -> Flatten -> [Dense -> softmax] -> Out
+3. Optimizer&Annealer: RMSprop, ReduceLROnPlateau
+4. Data augmentation: ImageDataGenerator
+5. batch_size = 86
+6. epochs = 2
+
+[Version 3.0]
+Accuracy: 0.99671 3.5h
+1. training set: validation set = 9 : 1
+2. CNN: In -> [[Conv2D -> relu]*2 -> MaxPool2D -> Dropout]*2 -> Flatten -> [Dense -> softmax] -> Out
+3. Optimizer&Annealer: RMSprop, ReduceLROnPlateau
+4. Data augmentation: ImageDataGenerator
+5! batch_size = 64
+6! epochs = 100
+
+[Version 4.0]Simplest but uneffectiveness
+Accuracy: (0.94833) 100s
+1. MLPClassifier
+
+
+
+https://www.kaggle.com/yassineghouzam/introduction-to-cnn-keras-0-997-top-6
+https://www.kaggle.com/poonaml/deep-neural-network-keras-way/notebook
