@@ -18,7 +18,9 @@ Accuracy: 0.98442
 6. epochs = 2
 
 [Version 3.0]
-Accuracy: 0.99671 3.5h
+Accuracy: 0.99671
+Time: 3.5h
+Rank: 172/2788
 1. training set: validation set = 9 : 1
 2. CNN: In -> [[Conv2D -> relu]*2 -> MaxPool2D -> Dropout]*2 -> Flatten -> [Dense -> softmax] -> Out
 3. Optimizer&Annealer: RMSprop, ReduceLROnPlateau
